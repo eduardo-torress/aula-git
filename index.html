@@ -32,6 +32,9 @@ Integração com ferramentas de automação, testes, deploy, etc.
 
 Em resumo: Git é a ferramenta, GitHub é o serviço na nuvem para hospedar projetos Git.
 
+git config --global user.name "Seu Nome" configura nome 
+git config --global user.email "seu@email.com" configura email 
+
 comandos git 
 git init: inicia um novo repositório Git local na pasta atual.
 git add: adiciona arquivos selecionados para a área de stage (pronto para ser commitado).
@@ -43,8 +46,13 @@ git checkout nomedohash -> volta(alterna) para uma versao anterior , seja ela pr
 git log --all -> mostra todos os commits feitos
 como criar um branch e ja navegar nela ? git checkout -b nomedabranch
 git branch -> lista as branchs que voce tem no projeto  , o * mostra branch que voce esta no momento 
+git branch -d nome-do-branch -> apaga uma branch local
+git push -u  origin nome-do-branch -> envia seu branch para o repositorio remoto 
+git pull -> Atualiza seu repositório local com mudanças do remoto.
 
 git merge -> permite unir o conteudo de duas ou mais branches em uma unica  branch . é usado para integrar alteraçoes na branch ( seja ela principal ou secundaria)
+git remote add origin  https://github.com/eduardo-torress/aula-git.git -> faz a conexao entre o seu projeto local e o gihub , se contecta com o repositorio do github
+
 
 informacoes :
 head -> descreve qual commit estamos trabalhando no momemto 
@@ -68,7 +76,7 @@ Trabalhar em equipes, onde cada desenvolvedor pode trabalhar em uma parte difere
 
 -->
 
-<h1 style="color: red;">Ola mundo !</h1>    
+<h1 style="color: red;">Ola mundo do github!</h1>    
 <script src="js/index.js"></script>
 
 
